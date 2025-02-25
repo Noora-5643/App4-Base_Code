@@ -71,18 +71,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!-- HERE IS WHERE ALL OF YOUR HTML PAGES GO -->
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
+        var Migraine_count = 0;
+        var Headache_count = 0;
 
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
+        function MigraineAdd(){
+            Migraine_count = Migraine_count + 1;
 <!--Deleted alert for allergy count-->
 
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;
+        function HeadacheAdd(){
+            Headache_count = Headache_count + 1;
         }
 
 // Added function to show results
@@ -90,13 +90,13 @@ function showResults(){
 // This will display results in a paragraph
 	var resultParagraph = document.getElementById("results");
 // This will find the total amount of allergy and cold symptoms
-	var allergyPercent = ((allergy_count/5) * 100);
-	var coldPercent = ((cold_count/5) * 100);
-	var total = cold_count + allergy_count;
+	var allergyPercent = ((Migraine_count/5) * 100);
+	var coldPercent = ((Headache_count/5) * 100);
+	var total = Headache_count + Migraine_count;
 // Added probability it will be cold or allergy
 	resultParagraph.innerHTML = 
-	"Your probability it is allergies = " + allergyPercent + "%" + 
-	"<br> Your probability it is a cold = " + coldPercent + "%";
+	"Your probability it is Migraine = " + MigrainePercent + "%" + 
+	"<br> Your probability it is a Headache = " + HeadachePercent + "%";
 	
 // Changed <!--...--> to slashes so the code doesn't break
 }
