@@ -90,12 +90,12 @@ function showResults(){
 // This will display results in a paragraph
 	var resultParagraph = document.getElementById("results");
 // This will find the total amount of allergy and cold symptoms
-	var allergyPercent = ((migraine_count/5) * 100);
-	var coldPercent = ((headache_count/5) * 100);
+	var migrainePercent = ((migraine_count/5) * 100);
+	var headachePercent = ((headache_count/5) * 100);
 	var total = headache_count + migraine_count;
 // Added probability it will be cold or allergy
 	resultParagraph.innerHTML = 
-	"Your probability it is migraine = " + migrainePercent + "%" + 
+	"Your probability it is a migraine = " + migrainePercent + "%" + 
 	"<br> Your probability it is a headache = " + headachePercent + "%";
 	
 // Changed <!--...--> to slashes so the code doesn't break
