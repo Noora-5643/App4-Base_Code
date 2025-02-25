@@ -149,10 +149,10 @@ function showResults(){
 	
     	<div id="content" class="w3-container">
 	<!--Added Question 1-->
-        <p>Do you have pain on one side of your head?</p>  
+        <p>Do you have pain on more than one side of your head?</p>  
 	<!--Added Yes or No Button to Question 1-->
-		<a href="#two"  onclick="HeadacheAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#two"  onclick="MigraineAdd();" class="w3-btn w3-black">No</a>
+		<a href="#two"  onclick="MigraineAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#two"  onclick="HeadacheAdd();" class="w3-btn w3-black">No</a>
 	</div><!-- /content -->
     	</div>
 </div>
@@ -199,11 +199,11 @@ function showResults(){
 	</div>
 	
     	<div id="content" class="w3-container">
-	<p>Are your symptoms seasonal or chronic?</p>  
+	<p>Has the pain lasted for more than four hours?</p>  
 	<!--Added Yes or No Button to Question 4-->
 	<!--Changed href to five-->
-		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+		<a href="#five"  onclick="MigraineAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#five"  onclick="HeadacheAdd();" class="w3-btn w3-black">No</a>
 	</div><!-- /content -->
     	</div>
 </div>
@@ -217,13 +217,13 @@ function showResults(){
 	</div>
 	
     	<div id="content" class="w3-container">
-	<p>Do you have body aches?</p>  
+	<p>Do you feel nauseous or have you been vomitting?</p>  
 	<!--Added Yes or No Button to Question 5-->
 	<!--Changed href to results-->
 	<!--Changed no to allergy and yes for cold-->
 	<!--Added show results-->
-		<a href="#six"  onclick="coldAdd(); showResults()" class="w3-btn w3-black"> Yes </a>
-		<a href="#six"  onclick="allergyAdd(); showResults()" class="w3-btn w3-black"> No </a>
+		<a href="#six"  onclick="MigraineAdd(); showResults()" class="w3-btn w3-black"> Yes </a>
+		<a href="#six"  onclick="HeadacheAdd(); showResults()" class="w3-btn w3-black"> No </a>
 	</div><!-- /content -->
     	</div>
 </div>
