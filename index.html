@@ -129,7 +129,7 @@ function showResults(){
 
 	<!--Formats and starts question 1-->
 <body>
-<div id="header" class="w3-container w3-flat-carrot">
+<div id="header" class="w3-container w3-pink">
 	<h1>Migraine or Headache?</h1>
 </div>
 	
@@ -149,7 +149,7 @@ function showResults(){
 	
     	<div id="content" class="w3-container">
 	<!--Added Question 1-->
-        <p>Do you have pain on more than one side of your head?</p>  
+        <p>Does the pain hurt more on one specific side of your head?</p>  
 	<!--Added Yes or No Button to Question 1-->
 		<a href="#two"  onclick="migraineAdd();" class="w3-btn w3-black"> Yes</a>
          	<a href="#two"  onclick="headacheAdd();" class="w3-btn w3-black">No</a>
@@ -177,12 +177,12 @@ function showResults(){
 <!--Copied and pasted code from Question 2 for Question 3-->
 <!--Changed "page" id to "three"-->
 <div class="page" id="three">
-	<div class="w3-container w3-flat-pink">
+	<div class="w3-container w3-pink">
 		<h1>Question 3</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p> Is the pain throbbing or pulsating?</p>
+		<p> Does the pain feel throbbing or pulsating?</p>
          	<a href="#four"  onclick="migraineAdd();" class="w3-btn w3-black">Yes</a>
 		<a href="#four"  onclick="headacheAdd();" class="w3-btn w3-black">No</a>
 	</div><!-- /content -->
@@ -199,7 +199,7 @@ function showResults(){
 	</div>
 	
     	<div id="content" class="w3-container">
-	<p>Has the pain lasted for more than four hours?</p>  
+	<p>Do you feel nauseous or have you been vomitting?</p>
 	<!--Added Yes or No Button to Question 4-->
 	<!--Changed href to five-->
 		<a href="#five"  onclick="migraineAdd();" class="w3-btn w3-black"> Yes</a>
@@ -217,10 +217,9 @@ function showResults(){
 	</div>
 	
     	<div id="content" class="w3-container">
-	<p>Do you feel nauseous or have you been vomitting?</p>  
+	<p>Do you have light or sound sensitivity?</p>  
 	<!--Added Yes or No Button to Question 5-->
 	<!--Changed href to results-->
-	<!--Changed no to migraine and yes for headache-->
 	<!--Added show results-->
 		<a href="#six"  onclick="migraineAdd(); showResults()" class="w3-btn w3-black"> Yes </a>
 		<a href="#six"  onclick="headacheAdd(); showResults()" class="w3-btn w3-black"> No </a>
@@ -228,8 +227,26 @@ function showResults(){
     	</div>
 </div>
 
-<!--Added results page-->
+<!--Copied and pasted code from Question 5 for Question 6-->	
+<!--Added Question 6-->
+<!--Changed page id to six-->
 <div class="page" id="six">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 6</h1>
+	</div>
+	
+    	<div id="content" class="w3-container">
+	<p>Do you have pain around eyes, temples, and face?</p>  
+	<!--Added Yes or No Button to Question 6-->
+	<!--Changed href to results-->
+	<!--Added show results-->
+		<a href="#seven"  onclick="migraineAdd(); showResults()" class="w3-btn w3-black"> Yes </a>
+		<a href="#seven"  onclick="headacheAdd(); showResults()" class="w3-btn w3-black"> No </a>
+	</div><!-- /content -->
+    	</div>
+</div>
+<!--Added results page-->
+<div class="page" id="seven">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results!</h1>
 	</div>
